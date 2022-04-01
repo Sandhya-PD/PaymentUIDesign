@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:id="@+id/ic_home"
+        android:icon="@drawable/house"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/ic_cards"
+        android:icon="@drawable/creditcard"
+        android:title="@string/cards"/>
+    <item
+        android:id="@+id/ic_info"
+        android:icon="@drawable/game_over"
+        android:title="@string/play"/>
+    <item
+        android:id="@+id/ic_notification"
+        android:icon="@drawable/notificationlogo"
+        android:title="@string/notifications"/>
+    <item
+        android:id="@+id/ic_account"
+        android:icon="@drawable/account"
+        android:title="@string/account"/>
+
+</menu>

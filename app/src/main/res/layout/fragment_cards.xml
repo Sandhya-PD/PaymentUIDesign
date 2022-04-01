@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cards">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_first"
+                android:layout_width="312dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/group"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik"
+                android:letterSpacing="0.15"
+                android:text="@string/a7ec7fc1"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="20sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@id/img_first"
+                app:layout_constraintRight_toRightOf="@id/img_first"
+                app:layout_constraintTop_toTopOf="@id/img_first" />
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/qrcode"
+                app:layout_constraintBottom_toBottomOf="@id/img_first"
+                app:layout_constraintEnd_toEndOf="@id/img_first"
+                app:layout_constraintHorizontal_bias="0.26"
+                app:layout_constraintLeft_toLeftOf="@id/img_first"
+                app:layout_constraintRight_toRightOf="@id/img_first"
+                app:layout_constraintTop_toTopOf="@id/img_first"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/credits"
+                android:textColor="#F3F5F5"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@id/img_first"
+                app:layout_constraintTop_toBottomOf="@id/code" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/_158"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@id/img_first"
+                app:layout_constraintTop_toBottomOf="@id/credits" />
+
+            <Button
+                android:id="@+id/recharge_btn"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/gradient_color"
+                android:text="@string/recharge"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/child"
+                app:layout_constraintLeft_toLeftOf="@id/child"
+                app:layout_constraintRight_toRightOf="@id/child"
+                app:layout_constraintStart_toStartOf="@id/child"
+                app:layout_constraintTop_toBottomOf="@id/img_first"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/child1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/layout_bg"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/child"
+            android:elevation="8dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/sandhya"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/child1"
+                app:layout_constraintTop_toTopOf="@id/child1" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/rubik"
+                android:gravity="center"
+                android:text="@string/issue_date_01_nov_2021"
+                android:textColor="#909090"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toEndOf="@id/name"
+                app:layout_constraintTop_toTopOf="@id/child1"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child2"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/child1"
+                app:layout_constraintTop_toBottomOf="@id/name"
+
+                >
+
+                <ImageView
+                    android:id="@+id/first_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/roundrings"
+                    app:layout_constraintStart_toStartOf="@id/child2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/credits_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/credits"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child2"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/first_img"
+                    app:layout_constraintTop_toTopOf="@id/child2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_152"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child2"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/first_img"
+                    app:layout_constraintTop_toBottomOf="@id/credits_one" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child3"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toEndOf="@id/child2"
+
+                app:layout_constraintTop_toBottomOf="@id/name">
+
+                <ImageView
+                    android:id="@+id/second_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/loyality"
+                    app:layout_constraintStart_toStartOf="@id/child3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/bonus"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child3"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/second_img"
+                    app:layout_constraintTop_toTopOf="@id/child3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_68"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child3"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/second_img"
+                    app:layout_constraintTop_toBottomOf="@id/bonus" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child4"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/child1"
+                app:layout_constraintTop_toBottomOf="@id/child2">
+
+                <ImageView
+                    android:id="@+id/third_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/tickets"
+                    app:layout_constraintStart_toStartOf="@id/child4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/tickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/tickets"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child4"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/third_img"
+                    app:layout_constraintTop_toTopOf="@id/child4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_50tickets"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child4"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/third_img"
+                    app:layout_constraintTop_toBottomOf="@id/tickets" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child5"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toEndOf="@id/child4"
+                app:layout_constraintTop_toBottomOf="@id/child3">
+
+                <ImageView
+                    android:id="@+id/fourt_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/hour"
+                    app:layout_constraintStart_toStartOf="@id/child5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/time"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child5"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/fourt_img"
+                    app:layout_constraintTop_toTopOf="@id/child5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child5"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/fourt_img"
+                    app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child6"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/child1"
+                app:layout_constraintTop_toBottomOf="@id/child4">
+
+                <ImageView
+                    android:id="@+id/fifth_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/courtesy"
+                    app:layout_constraintStart_toStartOf="@id/child6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/courtesy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/courtesy"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child6"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/fifth_img"
+                    app:layout_constraintTop_toTopOf="@id/child6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_50tickets"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child6"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/fifth_img"
+                    app:layout_constraintTop_toBottomOf="@id/courtesy" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/child7"
+                android:layout_width="118dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="@id/child1"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toEndOf="@id/child6"
+                app:layout_constraintTop_toBottomOf="@id/child5">
+
+                <ImageView
+                    android:id="@+id/sixth_img"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/loyality"
+                    app:layout_constraintStart_toStartOf="@id/child7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/loyalty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/loyal_points"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/child7"
+                    app:layout_constraintHorizontal_bias="0.228"
+                    app:layout_constraintStart_toEndOf="@id/sixth_img"
+                    app:layout_constraintTop_toTopOf="@id/child7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/_0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/child7"
+                    app:layout_constraintHorizontal_bias="0.15"
+                    app:layout_constraintStart_toEndOf="@id/sixth_img"
+                    app:layout_constraintTop_toBottomOf="@id/loyalty" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childMain3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/child1">
+
+
+        <TextView
+            android:id="@+id/activity_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/activities"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smallframe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/childMain3" />
+
+        <TextView
+            android:id="@+id/game_plays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/game_plays"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smallplay"
+            app:layout_constraintEnd_toStartOf="@+id/recharge"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/activity_txt"
+            app:layout_constraintStart_toStartOf="@id/divider"
+            app:layout_constraintTop_toTopOf="@id/childMain3" />
+
+        <TextView
+            android:id="@+id/recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/recharge"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smallvector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/game_plays"
+            app:layout_constraintStart_toStartOf="@id/divider1"
+            app:layout_constraintTop_toTopOf="@id/childMain3" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="8dp"
+            android:background="#ADB5BD"
+            android:foregroundTint="#909090"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/game_plays"
+            app:layout_constraintLeft_toRightOf="@id/activity_txt"
+            app:layout_constraintTop_toTopOf="@id/childMain3"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#ADB5BD"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/game_plays"
+            app:layout_constraintTop_toTopOf="@id/childMain3" />
+
+
+        <TextView
+            android:id="@+id/transfer_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/transfer_credits"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smallhome"
+            app:layout_constraintRight_toLeftOf="@id/divider3"
+            app:layout_constraintStart_toStartOf="@id/childMain3"
+            app:layout_constraintTop_toBottomOf="@+id/activity_txt" />
+
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:background="#ADB5BD"
+            android:foregroundTint="#909090"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/link_card"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintLeft_toRightOf="@id/transfer_credits"
+            app:layout_constraintStart_toEndOf="@id/transfer_credits"
+            app:layout_constraintTop_toTopOf="@id/transfer_credits" />
+
+        <TextView
+            android:id="@+id/link_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/link_card"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smalllink"
+            app:layout_constraintStart_toEndOf="@id/divider3"
+            app:layout_constraintTop_toBottomOf="@+id/game_plays" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:background="#ADB5BD"
+            android:foregroundTint="#909090"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/lost_card"
+            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintStart_toEndOf="@id/link_card"
+            app:layout_constraintTop_toTopOf="@id/link_card" />
+
+        <TextView
+            android:id="@+id/lost_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:text="@string/lost_card"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/smalllost"
+            app:layout_constraintRight_toRightOf="@id/childMain3"
+            app:layout_constraintStart_toEndOf="@id/divider4"
+            app:layout_constraintTop_toBottomOf="@+id/recharge" />
+
+        <Button
+            android:id="@+id/newcard_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/primary_color"
+            android:fontFamily="@font/rubik"
+            android:text="@string/new_card"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/childMain3"
+            app:layout_constraintRight_toRightOf="@id/childMain3"
+            app:layout_constraintStart_toStartOf="@id/childMain3"
+            app:layout_constraintTop_toBottomOf="@id/transfer_credits" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
